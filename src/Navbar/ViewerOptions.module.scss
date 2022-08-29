@@ -1,0 +1,9 @@
+.InputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  .RangeInput {
+    padding: 0;
+    margin: 0;
+  }
+}

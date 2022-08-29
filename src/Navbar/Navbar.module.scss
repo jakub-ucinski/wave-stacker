@@ -6,6 +6,8 @@
 
   .Main {
     margin: 10px 0;
+    display: flex;
+    flex-direction: row;
   }
 
   .Button {
@@ -14,7 +16,7 @@
   }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 00px) {
   .Navbar {
     align-items: center;
     flex-direction: row;

@@ -4,6 +4,7 @@ import styles from "./Navbar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWaveSquare, faCog } from "@fortawesome/free-solid-svg-icons";
 import WaveOptions from "./WaveOptions";
+import ViewerOptions from "./ViewerOptions";
 
 enum NAV_PAGE {
   WAVES,
@@ -20,7 +21,7 @@ const Navbar = () => {
   let main;
 
   page === NAV_PAGE.WAVES && (main = <WaveOptions />);
-  page === NAV_PAGE.SETTINGS && (main = "SETTINGS");
+  page === NAV_PAGE.SETTINGS && (main = <ViewerOptions />);
 
   return (
     <div className={styles.Navbar}>

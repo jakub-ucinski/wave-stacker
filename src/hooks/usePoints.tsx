@@ -1,14 +1,26 @@
 import { useAppSelector } from "../store";
+import { resolution as resolutionType } from "../store/viewer-slicer";
+
+const ZOOM_MAP = {
+  1: 25,
+  2: 50,
+  3: 100,
+  4: 200,
+  5: 400,
+};
 
 const usePoints = () => {
   const wavesSlice = useAppSelector((state) => state.waves);
+  const settingSlice = useAppSelector((state) => state.settings);
 
   return (
     dx: number = 0,
     defaultFrequency: number = 550,
-    percentage: number = 100,
-    increment: number = 5
+    zoom = settingSlice.zoom,
+    resolution = (11 - settingSlice.resolution) as resolutionType
   ) => {
+    const increment = resolution;
+    const percentage = ZOOM_MAP[zoom];
     const points: number[] = [];
 
     for (let i = 0; i <= Math.ceil((360 * percentage) / 100); i += increment) {

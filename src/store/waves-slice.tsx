@@ -8,16 +8,16 @@ export interface WavesSlice {
 const wavesSlice = createSlice({
   initialState: initialWavesSliceState,
   reducers: {
-    addWave(states, action) {
+    addWave(state, action) {
       const newWaveFrequency: number = action.payload;
-      const waveExists = states.waves.find((wave) => wave === newWaveFrequency);
-      !waveExists && states.waves.push(newWaveFrequency);
+      const waveExists = state.waves.find((wave) => wave === newWaveFrequency);
+      !waveExists && state.waves.push(newWaveFrequency);
     },
 
-    removeWave(states, action) {
+    removeWave(state, action) {
       const frequencyToRemove: number = action.payload;
-      const index = states.waves.indexOf(frequencyToRemove);
-      index > -1 && states.waves.splice(index, 1);
+      const index = state.waves.indexOf(frequencyToRemove);
+      index > -1 && state.waves.splice(index, 1);
     },
   },
   name: "waves",

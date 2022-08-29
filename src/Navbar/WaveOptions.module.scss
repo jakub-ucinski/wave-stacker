@@ -9,11 +9,13 @@
 .InputWrapper {
   display: flex;
   align-items: center;
-  margin: 0 10px;
+  //   margin: 0 10px;
 }
 
 .InputBlock {
   display: flex;
+  // display: flex;
+  //   flex-direction: column;
   .GreyAddButton {
     background-color: #adadad;
     cursor: not-allowed;
