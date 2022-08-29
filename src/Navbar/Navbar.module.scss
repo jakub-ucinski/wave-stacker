@@ -1,0 +1,23 @@
+.Navbar {
+  padding: 20px 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  .Main {
+    margin: 10px 0;
+  }
+
+  .Button {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .Navbar {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

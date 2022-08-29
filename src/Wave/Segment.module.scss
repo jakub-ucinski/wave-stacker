@@ -1,0 +1,25 @@
+.Segment {
+  height: 100%;
+  position: relative;
+  align-items: center;
+  .Middle,
+  .Point {
+    border-radius: 100%;
+    height: 3px;
+    width: 3px;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+  .Middle {
+    background-color: #f5cfe1;
+    z-index: 0;
+    top: 50%;
+  }
+
+  .Point {
+    background-color: black;
+    transition-duration: 0.15s;
+    top: 50%;
+  }
+}

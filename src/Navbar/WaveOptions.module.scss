@@ -1,0 +1,38 @@
+.Input {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+  width: 90px;
+}
+
+.InputWrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.InputBlock {
+  display: flex;
+  .GreyAddButton {
+    background-color: #adadad;
+    cursor: not-allowed;
+    border-color: #adadad;
+  }
+}
+
+.hz {
+  border: 2px solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  color: #9c9c9c;
+  margin-left: 0;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-color: black;
+}
