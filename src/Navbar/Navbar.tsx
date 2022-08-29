@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Button from "../UI/ Button/Button";
 import styles from "./Navbar.module.scss";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWaveSquare } from "@fortawesome/free-solid-svg-icons";
-import { faCog } from "@fortawesome/free-solid-svg-icons";
-import TextInput from "../UI/Input/Input";
+import { faWaveSquare, faCog } from "@fortawesome/free-solid-svg-icons";
 import WaveOptions from "./WaveOptions";
 
 enum NAV_PAGE {
